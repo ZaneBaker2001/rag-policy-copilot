@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+storage/*.faiss
+storage/*.db
+storage/*.json
