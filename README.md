@@ -197,14 +197,14 @@ The following results were produced from a sample evaluation run:
 
 ### Retrieval Evaluation Results 
 
-| Section | Metric | Value |
-|---|---|---:|
-| Overall Metrics | Cases | 38 |
-| Overall Metrics | Hit@1 | 86.84% |
-| Overall Metrics | Hit@3 | 86.84% |
-| Overall Metrics | MRR@5 | 0.8684 |
-| Overall Metrics | Confident Rate | 97.37% |
-| Overall Metrics | Abstain Rate | 2.63% |
+| Metric | Value |
+|---|---:|
+| Cases | 38 |
+| Hit@1 | 86.84% |
+| Hit@3 | 86.84% |
+| MRR@5 | 86.84% |
+| Confident Rate | 97.37% |
+| Abstain Rate | 2.63% |
 
 These results indicate that the model operates under a high degree of confidence, abstains when under uncertainty, all while maintaining high accuracy. 
 
