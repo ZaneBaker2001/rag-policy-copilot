@@ -1,0 +1,18 @@
+[
+  {
+    "question": "How many paid time off days do full-time employees receive?",
+    "expected_sources": ["hr_policy.txt"]
+  },
+  {
+    "question": "How many days per week may employees work remotely with manager approval?",
+    "expected_sources": ["hr_policy.txt"]
+  },
+  {
+    "question": "How many business days are invoices due within?",
+    "expected_sources": ["vendor_agreement.txt"]
+  },
+  {
+    "question": "How long must shared proprietary information remain confidential after termination?",
+    "expected_sources": ["vendor_agreement.txt"]
+  }
+]

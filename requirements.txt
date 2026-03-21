@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+pydantic
+pydantic-settings
+openai
+sentence-transformers
+faiss-cpu
+numpy
+beautifulsoup4
+lxml
+pypdf
+pytest
+httpx
+python-multipart
