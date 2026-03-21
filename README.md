@@ -149,7 +149,7 @@ Accepts a question and returns:
 python3 -m pytest -q
 ```
 
-## Run Evals
+## Run Evaluations
 
 ```bash
 python3 -m evals.retrieval_eval
