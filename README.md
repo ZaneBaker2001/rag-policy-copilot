@@ -167,7 +167,7 @@ The following results are from a sample API request:
 | Reason | `low_dense_score` |
 | Top Score | `0.8` |
 | Second Score | `0.2` |
-| Margin | `0.6000000000000001` |
+| Margin | `0.6` |
 | Candidate Count | `2` |
 | Used Filters | `{}` |
 
