@@ -1,14 +1,27 @@
 # RAG Policy Copilot
 
-A production-style RAG app for answering questions over policy manuals, contracts, and internal documents with citations, hybrid retrieval, and confidence-based abstention.
+A RAG application for answering questions over policy manuals, contracts, and internal documents using hybrid retrieval, grounded citations, and confidence-based abstention.
 
-## Highlights
+This implementation demonstrates how to build a more reliable document QA system by combining dense and sparse retrieval, reranking, citation-backed answers, and abstention when supporting evidence is weak. 
 
-- Citation-backed answers grounded in retrieved evidence
-- Dense + sparse retrieval with reranking
-- Confidence thresholds to reduce hallucinations
-- FastAPI `/ask` endpoint for document QA
-- FAISS for vector search and SQLite for metadata
+## Features
+
+### Ingestion
+- PDF, TXT, MD, HTML support
+- Structure-aware parsing
+
+### Retrieval
+- Dense (embeddings) + sparse (BM25)
+- Reranking
+
+### Generation
+- Citation-grounded responses
+- Confidence-based abstention
+
+### Infrastructure
+- FastAPI endpoint
+- API-key auth
+- SQLite + FAISS storage
 
 ## Tech Stack
 
@@ -125,43 +138,6 @@ rag-policy-copilot/
 ├── README.md
 └── requirements.txt
 ```
-
-## Features
-
-- Ingest PDF, TXT, MD, and HTML files from `data/docs/`
-- Parse text and preserve section structure when possible
-- Chunk documents with paragraph-aware splitting and overlap
-- Generate embeddings with `sentence-transformers`
-- Store vectors in FAISS
-- Store chunk metadata in SQLite
-- Retrieve chunks with dense + sparse + rerank scoring
-- Apply confidence thresholds and abstain on weak matches
-- Ask grounded questions through a FastAPI `/ask` endpoint
-- Return citations with source filenames, chunk IDs, and page numbers when available
-- Enforce basic API-key auth and chunk-level access filtering
-- Run tests with `pytest`
-- Run a simple retrieval evaluation script
-
-## Architecture
-
-1. Documents are ingested and chunked
-2. Chunks are embedded and stored in FAISS
-3. Metadata is stored in SQLite
-4. Queries go through dense retrieval, sparse retrieval (BM25), and
-reranking
-5. Top chunks are passed to the generator
-6. Responses include citations and confidence signals
-
-## Purpose
-
-Many LLM apps hallucinate when answering questions over internal documents.
-This implementation demonstrates a production-style RAG system that:
-
-- Grounds answers in retrieved evidence
-- Abstains when confidence is low
-- Surfaces retrieval diagnostics for debugging
-
-It is designed as a reference implementation for building reliable document QA systems.
 
 ## API
 
