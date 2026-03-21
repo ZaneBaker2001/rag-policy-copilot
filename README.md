@@ -19,6 +19,113 @@ A production-style RAG app for answering questions over policy manuals, contract
 - sentence-transformers
 - pytest
 
+## Quick Start 
+
+### Local Environment Setup  
+
+Clone the repository: 
+```bash
+git clone https://github.com/ZaneBaker2001/rag-policy-copilot.git
+cd rag-policy-copilot
+```
+Activate the virtual environment:
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+Install the required packages: 
+```bash
+pip3 install -r requirements.txt
+```
+Add the example environment:
+```bash
+cp .env.example .env
+```
+
+### Running the App
+
+Build the index:
+```bash
+python3 scripts/build_index.py
+```
+Start the API:
+```bash
+uvicorn app.main:app --reload
+```
+Open docs:
+```
+http://127.0.0.1:8000/docs
+```
+
+Sample request: 
+```bash 
+curl -X POST http://127.0.0.1:8000/ask -H "Content-Type: application/json" -H "x-api-key: dev-admin-key" -d '{"question":"What is the PTO carryover policy?"}'
+```
+
+### Add Documents 
+
+Supported file types include:
+
+- .pdf
+- .txt
+- .md
+- .html
+- .htm
+
+Two sample .txt files are provided. 
+
+### Environment 
+
+A sample environment file is provided:
+
+```bash
+OPENAI_API_KEY=your_api_key_here
+OPENAI_MODEL=gpt-4o-mini
+EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
+DATA_DIR=data/docs
+STORAGE_DIR=storage
+TOP_K=6
+MAX_CONTEXT_CHUNKS=6
+CHUNK_SIZE=900
+CHUNK_OVERLAP=120
+```
+
+This file can be customized.
+
+## Project Structure 
+
+```text
+rag-policy-copilot/
+├── app/
+│   ├── config.py
+│   ├── db.py
+│   ├── generator.py
+│   ├── ingest.py
+│   ├── main.py
+│   ├── models.py
+│   ├── retriever.py
+│   └── utils.py
+├── data/
+│   └── docs/
+├── evals/
+│   ├── eval_cases.json
+│   └── retrieval_eval.py
+├── scripts/
+│   └── build_index.py
+├── storage/
+│   ├── id_map.pkl
+│   ├── index.faiss
+│   └── rag.db
+├── tests/
+│   ├── test_authz.py
+│   ├── test_chunking.py
+│   └── test_hybrid_scoring.py
+├── .env.example
+├── .gitignore
+├── README.md
+└── requirements.txt
+```
+
 ## Features
 
 - Ingest PDF, TXT, MD, and HTML files from `data/docs/`
@@ -55,82 +162,6 @@ This implementation demonstrates a production-style RAG system that:
 - Surfaces retrieval diagnostics for debugging
 
 It is designed as a reference implementation for building reliable document QA systems.
-
-## Quick Start 
-
-Setup the environment: 
-```bash
-python3 -m venv .venv
-source .venv/bin/activate   
-pip3 install -r requirements.txt
-cp .env.example .env
-```
-## Add Documents 
-
-Supported file types include:
-
-- .pdf
-- .txt
-- .md
-- .html
-- .htm 
-
-Sample .txt files are provided. 
-
-## Running the App
-
-Build the index:
-```bash
-python3 scripts/build_index.py
-```
-Run the API:
-```bash
-uvicorn app.main:app --reload
-```
-Open docs:
-```
-http://127.0.0.1:8000/docs
-```
-
-Sample request: 
-```bash 
-curl -X POST http://127.0.0.1:8000/ask -H "Content-Type: application/json" -H "x-api-key: dev-admin-key" -d '{"question":"What is the PTO carryover policy?"}'
-```
-
-## Project Structure 
-
-```text
-rag-policy-copilot/
-├── app/
-│   ├── __init__.py
-│   ├── config.py
-│   ├── db.py
-│   ├── generator.py
-│   ├── ingest.py
-│   ├── main.py
-│   ├── models.py
-│   ├── retriever.py
-│   └── utils.py
-├── data/
-│   └── docs/
-├── evals/
-│   ├── eval_cases.json
-│   └── retrieval_eval.py
-├── scripts/
-│   └── build_index.py
-├── storage/
-│   ├── id_map.pkl
-│   ├── index.faiss
-│   └── rag.db
-├── tests/
-│   ├── test_authz.py
-│   ├── test_chunking.py
-│   └── test_hybrid_scoring.py
-├── .env.example
-├── .gitignore
-├── README.md
-└── requirements.txt
-```
 
 ## API
 
