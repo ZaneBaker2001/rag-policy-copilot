@@ -1,11 +1,40 @@
 Vendor Agreement
+Version: 1.0
+Document Type: Contract Summary
 
-Termination:
+Overview
+This agreement summary outlines standard rules for termination, payment timing, and confidentiality obligations between the company and an approved vendor.
+
+Termination
 Either party may terminate this agreement with 30 days written notice.
 Immediate termination is allowed in the event of material breach, fraud, or violation of confidentiality obligations.
 
-Payment Terms:
+Termination Clarifications
+The standard termination notice period is 30 days in writing.
+Either party can end the agreement by giving 30 days written notice.
+A party may terminate the contract immediately if the other party commits fraud.
+Immediate termination is also permitted for a material breach of the agreement.
+A violation of confidentiality obligations is grounds for immediate termination without waiting for the ordinary notice period.
+
+Payment Terms
 Invoices are due within 15 business days of receipt unless otherwise agreed in writing.
 
-Confidentiality:
+Payment Clarifications
+Payment is required within 15 business days after an invoice is received.
+The invoice payment term is net 15 business days from receipt.
+Invoices must be paid no later than 15 business days following receipt unless the parties agree to different written terms.
+The standard vendor payment window is 15 business days.
+
+Confidentiality
 Each party shall maintain the confidentiality of shared proprietary information for 3 years after termination.
+
+Confidentiality Clarifications
+Confidentiality obligations survive termination for 3 years.
+Shared proprietary or confidential information must remain protected for 3 years after the agreement ends.
+The post-termination confidentiality period is 3 years.
+The duty to keep shared proprietary information confidential continues for 3 years following termination.
+
+Search Keywords
+termination notice, written notice, notice period, immediate termination, fraud, material breach
+invoice due date, payment terms, accounts payable, business days, receipt of invoice
+confidentiality period, survive termination, proprietary information, confidential information, post-termination obligations

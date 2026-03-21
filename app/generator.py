@@ -26,6 +26,29 @@ def build_context(chunks: List[RetrievedChunk]) -> str:
     return "\n\n".join(parts)
 
 
+def build_fallback_answer(
+    question: str,
+    chunks: List[RetrievedChunk],
+    diagnostics: SearchDiagnostics,
+    reason: str,
+) -> str:
+    if not chunks or diagnostics.abstained:
+        abstain_reason = diagnostics.reason or reason or "insufficient_evidence"
+        return (
+            "I do not have enough reliable information in the indexed documents to answer "
+            f"that confidently. Reason: {abstain_reason}."
+        )
+
+    top = chunks[0]
+    page_part = f"page {top.page}" if top.page is not None else "page n/a"
+
+    return (
+        "Using extractive fallback because answer generation was unavailable.\n\n"
+        f"Best matching evidence for: {question}\n"
+        f"- {top.text[:700].strip()} [{'{} | {} | {}'.format(top.source, top.chunk_id, page_part)}]"
+    )
+
+
 def generate_answer(
     question: str,
     chunks: List[RetrievedChunk],
@@ -41,20 +64,16 @@ def generate_answer(
     context = build_context(chunks)
 
     if not settings.openai_api_key:
-        fallback = [
-            "OpenAI API key not configured, so this is an extractive fallback answer.",
-            "",
-            "Most relevant evidence:",
-        ]
-        for c in chunks[:3]:
-            page_part = f"page {c.page}" if c.page is not None else "page n/a"
-            fallback.append(
-                f"- {c.text[:350]}... [{c.source} | {c.chunk_id} | {page_part}]"
-            )
-        return "\n".join(fallback)
+        return build_fallback_answer(
+            question=question,
+            chunks=chunks,
+            diagnostics=diagnostics,
+            reason="openai_api_key_not_configured",
+        )
 
-    client = OpenAI(api_key=settings.openai_api_key)
-    user_prompt = f"""Question:
+    try:
+        client = OpenAI(api_key=settings.openai_api_key)
+        user_prompt = f"""Question:
 {question}
 
 Context:
@@ -67,13 +86,26 @@ Instructions:
 - Prefer the shortest accurate answer.
 """
 
-    response = client.chat.completions.create(
-        model=settings.openai_model,
-        temperature=0.1,
-        messages=[
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": user_prompt},
-        ],
-    )
+        response = client.chat.completions.create(
+            model=settings.openai_model,
+            temperature=0.1,
+            messages=[
+                {"role": "system", "content": SYSTEM_PROMPT},
+                {"role": "user", "content": user_prompt},
+            ],
+        )
 
-    return response.choices[0].message.content or "No answer generated."
+        return response.choices[0].message.content or build_fallback_answer(
+            question=question,
+            chunks=chunks,
+            diagnostics=diagnostics,
+            reason="empty_model_response",
+        )
+
+    except Exception as exc:
+        return build_fallback_answer(
+            question=question,
+            chunks=chunks,
+            diagnostics=diagnostics,
+            reason=f"openai_error: {exc.__class__.__name__}",
+        )

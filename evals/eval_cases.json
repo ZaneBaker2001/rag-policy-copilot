@@ -1,18 +1,231 @@
 [
   {
     "question": "How many paid time off days do full-time employees receive?",
-    "expected_sources": ["hr_policy.txt"]
+    "expected_sources": ["hr_policy.txt"],
+    "expected_answer_contains": ["20 days"],
+    "should_abstain": false
+  },
+  {
+    "question": "How much PTO do full-time employees get each calendar year?",
+    "expected_sources": ["hr_policy.txt"],
+    "expected_answer_contains": ["20 days"],
+    "should_abstain": false
+  },
+  {
+    "question": "What is the annual paid time off allocation for full-time employees?",
+    "expected_sources": ["hr_policy.txt"],
+    "expected_answer_contains": ["20 days"],
+    "should_abstain": false
+  },
+  {
+    "question": "How many vacation days are granted to full-time employees per year?",
+    "expected_sources": ["hr_policy.txt"],
+    "expected_answer_contains": ["20 days"],
+    "should_abstain": false
   },
   {
     "question": "How many days per week may employees work remotely with manager approval?",
-    "expected_sources": ["hr_policy.txt"]
+    "expected_sources": ["hr_policy.txt"],
+    "expected_answer_contains": ["3 days"],
+    "should_abstain": false
+  },
+  {
+    "question": "What is the maximum number of remote workdays allowed each week with manager approval?",
+    "expected_sources": ["hr_policy.txt"],
+    "expected_answer_contains": ["3 days"],
+    "should_abstain": false
+  },
+  {
+    "question": "How often can employees work from home during the week if their manager approves it?",
+    "expected_sources": ["hr_policy.txt"],
+    "expected_answer_contains": ["3 days"],
+    "should_abstain": false
+  },
+  {
+    "question": "What is the remote work limit per week for employees with approval?",
+    "expected_sources": ["hr_policy.txt"],
+    "expected_answer_contains": ["3 days"],
+    "should_abstain": false
+  },
+  {
+    "question": "What security training must employees complete each year?",
+    "expected_sources": ["hr_policy.txt"],
+    "expected_answer_contains": ["security awareness training"],
+    "should_abstain": false
+  },
+  {
+    "question": "Are employees required to complete annual security awareness training?",
+    "expected_sources": ["hr_policy.txt"],
+    "expected_answer_contains": ["security awareness training"],
+    "should_abstain": false
+  },
+  {
+    "question": "What authentication control is required for all company systems?",
+    "expected_sources": ["hr_policy.txt"],
+    "expected_answer_contains": ["multi-factor authentication"],
+    "should_abstain": false
+  },
+  {
+    "question": "Do employees need multi-factor authentication for company systems?",
+    "expected_sources": ["hr_policy.txt"],
+    "expected_answer_contains": ["multi-factor authentication"],
+    "should_abstain": false
   },
   {
     "question": "How many business days are invoices due within?",
-    "expected_sources": ["vendor_agreement.txt"]
+    "expected_sources": ["vendor_agreement.txt"],
+    "expected_answer_contains": ["15 business days"],
+    "should_abstain": false
+  },
+  {
+    "question": "What are the payment terms for invoices under the vendor agreement?",
+    "expected_sources": ["vendor_agreement.txt"],
+    "expected_answer_contains": ["15 business days"],
+    "should_abstain": false
+  },
+  {
+    "question": "How quickly must invoices be paid after receipt?",
+    "expected_sources": ["vendor_agreement.txt"],
+    "expected_answer_contains": ["15 business days"],
+    "should_abstain": false
+  },
+  {
+    "question": "Within how many business days of receipt are invoices payable?",
+    "expected_sources": ["vendor_agreement.txt"],
+    "expected_answer_contains": ["15 business days"],
+    "should_abstain": false
   },
   {
     "question": "How long must shared proprietary information remain confidential after termination?",
-    "expected_sources": ["vendor_agreement.txt"]
+    "expected_sources": ["vendor_agreement.txt"],
+    "expected_answer_contains": ["3 years"],
+    "should_abstain": false
+  },
+  {
+    "question": "What is the confidentiality period after the agreement ends?",
+    "expected_sources": ["vendor_agreement.txt"],
+    "expected_answer_contains": ["3 years"],
+    "should_abstain": false
+  },
+  {
+    "question": "For how many years does confidentiality survive termination?",
+    "expected_sources": ["vendor_agreement.txt"],
+    "expected_answer_contains": ["3 years"],
+    "should_abstain": false
+  },
+  {
+    "question": "How long do the confidentiality obligations continue after termination?",
+    "expected_sources": ["vendor_agreement.txt"],
+    "expected_answer_contains": ["3 years"],
+    "should_abstain": false
+  },
+  {
+    "question": "How much notice is required to terminate the vendor agreement?",
+    "expected_sources": ["vendor_agreement.txt"],
+    "expected_answer_contains": ["30 days"],
+    "should_abstain": false
+  },
+  {
+    "question": "Can either party terminate the agreement with written notice, and how much?",
+    "expected_sources": ["vendor_agreement.txt"],
+    "expected_answer_contains": ["30 days"],
+    "should_abstain": false
+  },
+  {
+    "question": "What is the standard termination notice period in the vendor agreement?",
+    "expected_sources": ["vendor_agreement.txt"],
+    "expected_answer_contains": ["30 days"],
+    "should_abstain": false
+  },
+  {
+    "question": "How many days written notice are needed for termination by either party?",
+    "expected_sources": ["vendor_agreement.txt"],
+    "expected_answer_contains": ["30 days"],
+    "should_abstain": false
+  },
+  {
+    "question": "When is immediate termination allowed under the vendor agreement?",
+    "expected_sources": ["vendor_agreement.txt"],
+    "expected_answer_contains": ["material breach", "fraud"],
+    "should_abstain": false
+  },
+  {
+    "question": "Under what circumstances can the agreement be terminated immediately?",
+    "expected_sources": ["vendor_agreement.txt"],
+    "expected_answer_contains": ["material breach", "fraud"],
+    "should_abstain": false
+  },
+  {
+    "question": "Is immediate termination permitted for fraud or material breach?",
+    "expected_sources": ["vendor_agreement.txt"],
+    "expected_answer_contains": ["fraud", "material breach"],
+    "should_abstain": false
+  },
+  {
+    "question": "What events allow immediate termination without waiting for the notice period?",
+    "expected_sources": ["vendor_agreement.txt"],
+    "expected_answer_contains": ["material breach", "fraud"],
+    "should_abstain": false
+  },
+  {
+    "question": "What is the PTO carryover policy?",
+    "expected_sources": ["hr_policy.txt"],
+    "expected_answer_contains": ["does not carry over", "written exception"],
+    "should_abstain": false
+  },
+  {
+    "question": "Can unused PTO roll over into the next year?",
+    "expected_sources": ["hr_policy.txt"],
+    "expected_answer_contains": ["does not carry over", "written exception"],
+    "should_abstain": false
+  },
+  {
+    "question": "Do employees lose unused PTO at year end?",
+    "expected_sources": ["hr_policy.txt"],
+    "expected_answer_contains": ["does not carry over"],
+    "should_abstain": false
+  },
+  {
+    "question": "Is PTO rollover allowed automatically?",
+    "expected_sources": ["hr_policy.txt"],
+    "expected_answer_contains": ["not", "written exception"],
+    "should_abstain": false
+  },
+  {
+    "question": "When is PTO carryover allowed?",
+    "expected_sources": ["hr_policy.txt"],
+    "expected_answer_contains": ["written exception"],
+    "should_abstain": false
+  },
+
+  {
+    "question": "What is the parental leave policy?",
+    "expected_sources": [],
+    "expected_answer_contains": [],
+    "should_abstain": true
+  },
+  {
+    "question": "Does the company reimburse internet expenses for remote employees?",
+    "expected_sources": [],
+    "expected_answer_contains": [],
+    "should_abstain": true
+  },
+  {
+    "question": "What is the severance policy for terminated employees?",
+    "expected_sources": [],
+    "expected_answer_contains": [],
+    "should_abstain": true
+  },
+  {
+    "question": "What jurisdiction governs the vendor agreement?",
+    "expected_sources": [],
+    "expected_answer_contains": [],
+    "should_abstain": true
+  },
+  {
+    "question": "Are vendors required to carry cyber insurance?",
+    "expected_sources": [],
+    "expected_answer_contains": [],
+    "should_abstain": true
   }
 ]

@@ -46,6 +46,9 @@ class SearchDiagnostics(BaseModel):
     second_score: float = 0.0
     margin: float = 0.0
     candidate_count: int = 0
+    retrieval_latency_ms: float = 0.0
+    generation_latency_ms: float = 0.0
+    total_latency_ms: float = 0.0
 
 
 class AskResponse(BaseModel):
@@ -63,3 +66,5 @@ class EvalCase(BaseModel):
     question: str
     expected_sources: List[str] = Field(default_factory=list)
     expected_chunk_ids: List[str] = Field(default_factory=list)
+    expected_answer_contains: List[str] = Field(default_factory=list)
+    should_abstain: bool = False

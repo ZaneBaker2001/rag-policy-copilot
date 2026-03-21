@@ -1,4 +1,5 @@
 from contextlib import asynccontextmanager
+from time import perf_counter
 from typing import Optional
 
 from fastapi import Depends, FastAPI, Header, HTTPException, status
@@ -80,6 +81,8 @@ def ask(
     if not request.question.strip():
         raise HTTPException(status_code=400, detail="Question must not be empty.")
 
+    started = perf_counter()
+
     top_k = request.top_k or settings.top_k
     chunks, diagnostics = vector_store.search(
         question=request.question,
@@ -87,7 +90,18 @@ def ask(
         filters=request.filters,
         user=user,
     )
+
+    generation_started = perf_counter()
     answer = generate_answer(request.question, chunks, diagnostics)
+    generation_latency_ms = (perf_counter() - generation_started) * 1000
+    total_latency_ms = (perf_counter() - started) * 1000
+
+    diagnostics = diagnostics.model_copy(
+        update={
+            "generation_latency_ms": generation_latency_ms,
+            "total_latency_ms": total_latency_ms,
+        }
+    )
 
     return AskResponse(
         answer=answer,

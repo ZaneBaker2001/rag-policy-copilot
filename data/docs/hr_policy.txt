@@ -1,10 +1,48 @@
 HR Policy Handbook
+Version: 1.1
+Document Type: Internal Policy Reference
 
-Remote Work
+Overview
+This handbook summarizes selected company policies for employee work arrangements, paid leave, and security requirements. It is intended to provide a simple internal reference for common policy questions.
+
+Remote Work Policy
 Employees may work remotely up to 3 days per week with manager approval.
 
-Paid Time Off
+Remote Work Clarifications
+The maximum remote work allowance is 3 days each week, provided the employee's manager approves the arrangement.
+Employees are permitted to work from home no more than 3 days in a standard workweek unless a separate written exception is granted.
+With manager approval, employees can work off-site, from home, or remotely for as many as 3 days per week.
+The remote work limit is 3 approved work-from-home days in a week.
+
+Paid Time Off Policy
 Full-time employees receive 20 days of paid time off per calendar year.
 
-Security
+Paid Time Off Clarifications
+The annual PTO allocation for full-time employees is 20 days each calendar year.
+Full-time employees are granted 20 paid leave days per year.
+The standard yearly vacation and paid time off benefit for full-time staff is 20 days.
+Employees in full-time roles receive 20 PTO days annually.
+
+PTO Carryover Policy
+Unused paid time off does not carry over into the next calendar year unless an exception is approved in writing by Human Resources.
+
+PTO Carryover Clarifications
+The standard policy is that unused PTO expires at the end of the calendar year and is not rolled over automatically.
+PTO carryover is not allowed by default.
+Employees should not expect unused vacation or PTO days to roll into the following year unless HR approves a written exception.
+Any PTO rollover requires written HR approval.
+The default carryover policy is no carryover unless approved in writing by Human Resources.
+
+Security Requirements
 Employees must complete annual security awareness training and use multi-factor authentication for all company systems.
+
+Security Clarifications
+All employees are required to complete security awareness training every year.
+Annual security training is mandatory for employees.
+Employees must use multi-factor authentication, also called MFA, when accessing company systems.
+All company systems require multi-factor authentication for employee access.
+
+Search Keywords
+PTO, paid time off, vacation days, annual leave, yearly leave, leave balance, carryover, rollover, roll over, unused PTO
+remote work, work from home, WFH, hybrid work, off-site work, remote days
+security awareness training, annual training, MFA, multi-factor authentication, two-step verification

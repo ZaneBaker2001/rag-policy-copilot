@@ -1,5 +1,6 @@
 import os
 import pickle
+import time
 from typing import Dict, List, Optional
 
 import faiss
@@ -168,12 +169,15 @@ class VectorStore:
         filters: Dict,
         user: UserContext,
     ) -> tuple[List[RetrievedChunk], SearchDiagnostics]:
+        started = time.perf_counter()
+
         if not self.id_map:
             return [], SearchDiagnostics(
                 confident=False,
                 abstained=True,
                 reason="index_not_loaded",
                 candidate_count=0,
+                retrieval_latency_ms=(time.perf_counter() - started) * 1000,
             )
 
         dense_candidates = self._dense_candidates(question=question, top_k=top_k)
@@ -185,6 +189,7 @@ class VectorStore:
                 abstained=True,
                 reason="no_accessible_candidates",
                 candidate_count=0,
+                retrieval_latency_ms=(time.perf_counter() - started) * 1000,
             )
 
         dense_candidates = dense_candidates[: settings.hybrid_candidate_k]
@@ -239,6 +244,7 @@ class VectorStore:
             second_score=second_score,
             margin=margin,
             candidate_count=len(ranked),
+            retrieval_latency_ms=(time.perf_counter() - started) * 1000,
         )
 
         return results, diagnostics

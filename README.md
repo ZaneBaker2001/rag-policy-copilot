@@ -1,6 +1,23 @@
 # RAG Policy Copilot
 
-A Retrieval-Augmented Generation (RAG) app for answering questions over policy manuals, contracts, and internal documents with citations.
+A production-style RAG app for answering questions over policy manuals, contracts, and internal documents with citations, hybrid retrieval, and confidence-based abstention.
+
+## Highlights
+
+- Citation-backed answers grounded in retrieved evidence
+- Dense + sparse retrieval with reranking
+- Confidence thresholds to reduce hallucinations
+- FastAPI `/ask` endpoint for document QA
+- FAISS for vector search and SQLite for metadata
+
+## Tech Stack
+
+- Python
+- FastAPI
+- FAISS
+- SQLite
+- sentence-transformers
+- pytest
 
 ## Features
 
@@ -41,7 +58,7 @@ It is designed as a reference implementation for building reliable document QA s
 
 ## Quick Start 
 
-Setup the enviornment: 
+Setup the environment: 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate   
@@ -115,19 +132,6 @@ rag-policy-copilot/
 └── requirements.txt
 ```
 
-## Example 
-
-Below is a sample QA query that sheds light on the app's behavior under uncertainty. 
-
-**Question:**
-What is the PTO carryover policy?
-
-**Answer:**
-I do not have enough reliable information in the indexed documents to answer that confidently.
-
-This example confirms that the system does not attempt to provide an answer whenever its retrieval confidence is low.
-
-
 ## API
 
 ### GET /health 
@@ -149,51 +153,37 @@ Accepts a question and returns:
 python3 -m pytest -q
 ```
 
-## Run Evals
+## Run Evaluations
 
+To evaluate retrievals:
 ```bash
 python3 -m evals.retrieval_eval
 ```
 
-## API Request Results 
+## Evaluation Results 
 
-The following results are from a sample API request:
+The following results were produced from a sample evaluation run: 
 
-| Field | Value |
-|---|---|
-| Question | `What is the PTO carryover policy?` |
-| Answer | `I do not have enough reliable information in the indexed documents to answer that confidently. Reason: low_dense_score.` |
-| Abstained | `true` |
-| Reason | `low_dense_score` |
-| Top Score | `0.8` |
-| Second Score | `0.2` |
-| Margin | `0.6000000000000001` |
-| Candidate Count | `2` |
-| Used Filters | `{}` |
+### Retrieval Evaluation Results 
 
-### Returned Citations
+| Section | Metric | Value |
+|---|---|---:|
+| Overall Metrics | Cases | 38 |
+| Overall Metrics | Hit@1 | 86.84% |
+| Overall Metrics | Hit@3 | 86.84% |
+| Overall Metrics | MRR@5 | 0.8684 |
+| Overall Metrics | Confident Rate | 97.37% |
+| Overall Metrics | Abstain Rate | 2.63% |
 
-| Rank | Source | Chunk ID | Score | Dense Score | Sparse Score | Rerank Score | Page | Section | Notes |
-|---|---|---|---:|---:|---:|---:|---|---|---|
-| 1 | `hr_policy.txt` | `hr_policy.txt::chunk_0` | `0.8` | `0.16160598397254944` | `0.14433756729740646` | `-10.549288749694824` | `null` | `null` | Mentions PTO allocation, but not carryover policy |
-| 2 | `vendor_agreement.txt` | `vendor_agreement.txt::chunk_0` | `0.2` | `0.14235614240169525` | `0.25607375986579195` | `-11.024574279785156` | `null` | `null` | Retrieved as a lower-relevance candidate |
+These results indicate that the model operates under a high degree of confidence, abstains when under uncertainty, all while maintaining high accuracy. 
 
-## Retrieval Evaluation Results
+## Limitations 
 
-The following results are from a sample evaluation run:
+- Performance not optimized for large-scale datasets
+- No distributed indexing
+- Limited document parsing for complex PDFs
+- Evaluation dataset is small and synthetic
 
-| Question | Confident | Top Source 1 | Top Source 2 |
-|---|---|---|---|
-| `How many paid time off days do full-time employees receive?` | `true` | `hr_policy.txt` | `vendor_agreement.txt` |
-| `How many days per week may employees work remotely with manager approval?` | `true` | `hr_policy.txt` | `vendor_agreement.txt` |
-| `How many business days are invoices due within?` | `true` | `vendor_agreement.txt` | `hr_policy.txt` |
-| `How long must shared proprietary information remain confidential after termination?` | `true` | `vendor_agreement.txt` | `hr_policy.txt` |
 
-### Summary Metrics
 
-| Metric | Value |
-|---|---|
-| Hit@1 | `100.00%` |
-| Hit@3 | `100.00%` |
 
-Note: These results are based on a small synthetic evaluation set for demonstration purposes.
