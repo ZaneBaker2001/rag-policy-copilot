@@ -182,8 +182,6 @@ The following results were produced from a sample evaluation run:
 | Confident Rate |  97.37% |
 | Abstain Rate   |   2.63% |
 
-These results indicate that the app operates under a high degree of confidence, abstains when under uncertainty, all while maintaining high accuracy. 
-
 ## Limitations 
 
 - Performance not optimized for large-scale datasets
