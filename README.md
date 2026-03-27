@@ -223,8 +223,10 @@ The following results were produced from a sample run:
 | Confident Rate |  97.37% |
 | Abstain Rate   |   2.63% |
 
-These results indicate that the model operates with great confidence and refrains from providing incorrect answers, which aligns with the
-intended behavior.
+Takeaways:
+- The model operates with great confidence.
+- The model refrains from providing incorrect/inaccurate answers.
+- The model can handle most of the evaluation cases.  
 
 
 
