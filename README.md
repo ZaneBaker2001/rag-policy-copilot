@@ -187,7 +187,7 @@ The below plot visualizes the model's latency.
 
 ![Model Latency](./evals/output/latency_by_case.png) 
 
-Takeaways: 
+Key takeaways: 
 - Latency is mostly stable, with total response time for most cases landing around 160–220 ms.
 - The biggest contributor is usually generation latency, while retrieval latency is smaller but occasionally spikes.
 - Performance is generally consistent and fast outside of a few outlier cases. 
@@ -202,7 +202,7 @@ The below plot visualizes the model's hallucinations.
 
 ![Model Hallucinations](./evals/output/hallucination_by_case.png) 
 
-Takeaways: 
+Key takeaways: 
 - The model is usually fairly grounded, with most cases clustering around an unsupported-sentence ratio of about 0.10 to 0.15.
 - That suggests most answers contain only a small amount of potentially unsupported content.
 - Hallucination risk is generally low-to-moderate. 
@@ -212,7 +212,7 @@ To evaluate retrievals:
 python3 -m evals.retrieval_eval
 ```
 
-The following results were produced from a sample run: 
+The below table reports the model's performance on retrievals: 
 
 | Metric         |   Value |
 |----------------|--------:|
@@ -223,10 +223,10 @@ The following results were produced from a sample run:
 | Confident Rate |  97.37% |
 | Abstain Rate   |   2.63% |
 
-Takeaways:
-- The model operates with great confidence.
+Key takeaways:
+- The model operates with great confidence (97.37%).
 - The model refrains from providing incorrect/inaccurate answers.
-- The model can handle most of the evaluation cases.  
+- The model can handle most of the evaluation cases (86.84%).  
 
 
 
