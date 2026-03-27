@@ -79,9 +79,9 @@ docker run --rm -p 8000:8000 rag-policy-copilot
 
 Sample request: 
 
-```bash 
-curl -X POST http://127.0.0.1:8000/ask -H "Content-Type: application/json" -H "x-api-key: dev-admin-key" \
--d '{"question":"What is the PTO carryover policy?"}'
+```bash
+curl -X POST http://127.0.0.1:8000/ask -H "Content-Type: application/json" \
+-H "x-api-key: dev-admin-key" -d '{"question":"What is the PTO carryover policy?"}'
 ```
 
 Sample response:
@@ -198,8 +198,6 @@ The below plot visualizes the model's hallucinations.
 ![Model Hallucinations](./evals/output/hallucination_by_case.png) 
 
 The model is usually fairly grounded, with most cases clustering around an unsupported-sentence ratio of about 0.10 to 0.15. That suggests most answers contain only a small amount of potentially unsupported content. There are a few clear problem cases, though: cases 19, 20, and 38 are elevated, 35 and 37 are moderately high, and case 36 is the major outlier at 1.0, meaning that response appears completely unsupported by the retrieved context. Hallucination risk is generally low-to-moderate, but there are a handful of failure cases that deserve targeted inspection.
-
-To evaluate 
 
 To evaluate retrievals:
 ```bash
