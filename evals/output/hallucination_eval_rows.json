@@ -1,0 +1,562 @@
+[
+  {
+    "question": "How many paid time off days do full-time employees receive?",
+    "expected_sources": [
+      "hr_policy.txt"
+    ],
+    "should_abstain": false,
+    "diagnostics_abstained": false,
+    "answer_support": true,
+    "abstention_alignment": true,
+    "grounding_score": 0.8413,
+    "unsupported_sentence_ratio": 0.1111,
+    "sentence_count": 9,
+    "hallucination_flag": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: How many paid time off days do full-time employees receive? - Paid Time Off Policy Full-time employees receive 20 days of "
+  },
+  {
+    "question": "How much PTO do full-time employees get each calendar year?",
+    "expected_sources": [
+      "hr_policy.txt"
+    ],
+    "should_abstain": false,
+    "diagnostics_abstained": false,
+    "answer_support": true,
+    "abstention_alignment": true,
+    "grounding_score": 0.837,
+    "unsupported_sentence_ratio": 0.1111,
+    "sentence_count": 9,
+    "hallucination_flag": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: How much PTO do full-time employees get each calendar year? - Paid Time Off Policy Full-time employees receive 20 days of "
+  },
+  {
+    "question": "What is the annual paid time off allocation for full-time employees?",
+    "expected_sources": [
+      "hr_policy.txt"
+    ],
+    "should_abstain": false,
+    "diagnostics_abstained": false,
+    "answer_support": true,
+    "abstention_alignment": true,
+    "grounding_score": 0.8571,
+    "unsupported_sentence_ratio": 0.1111,
+    "sentence_count": 9,
+    "hallucination_flag": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: What is the annual paid time off allocation for full-time employees? - Paid Time Off Policy Full-time employees receive 20"
+  },
+  {
+    "question": "How many vacation days are granted to full-time employees per year?",
+    "expected_sources": [
+      "hr_policy.txt"
+    ],
+    "should_abstain": false,
+    "diagnostics_abstained": false,
+    "answer_support": true,
+    "abstention_alignment": true,
+    "grounding_score": 0.8472,
+    "unsupported_sentence_ratio": 0.1111,
+    "sentence_count": 9,
+    "hallucination_flag": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: How many vacation days are granted to full-time employees per year? - Paid Time Off Policy Full-time employees receive 20 "
+  },
+  {
+    "question": "How many days per week may employees work remotely with manager approval?",
+    "expected_sources": [
+      "hr_policy.txt"
+    ],
+    "should_abstain": false,
+    "diagnostics_abstained": false,
+    "answer_support": true,
+    "abstention_alignment": true,
+    "grounding_score": 0.8611,
+    "unsupported_sentence_ratio": 0.1111,
+    "sentence_count": 9,
+    "hallucination_flag": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: How many days per week may employees work remotely with manager approval? - HR Policy Handbook Version: 1.1 Document Type:"
+  },
+  {
+    "question": "What is the maximum number of remote workdays allowed each week with manager approval?",
+    "expected_sources": [
+      "hr_policy.txt"
+    ],
+    "should_abstain": false,
+    "diagnostics_abstained": false,
+    "answer_support": true,
+    "abstention_alignment": true,
+    "grounding_score": 0.8395,
+    "unsupported_sentence_ratio": 0.1111,
+    "sentence_count": 9,
+    "hallucination_flag": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: What is the maximum number of remote workdays allowed each week with manager approval? - HR Policy Handbook Version: 1.1 D"
+  },
+  {
+    "question": "How often can employees work from home during the week if their manager approves it?",
+    "expected_sources": [
+      "hr_policy.txt"
+    ],
+    "should_abstain": false,
+    "diagnostics_abstained": false,
+    "answer_support": true,
+    "abstention_alignment": true,
+    "grounding_score": 0.8421,
+    "unsupported_sentence_ratio": 0.1111,
+    "sentence_count": 9,
+    "hallucination_flag": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: How often can employees work from home during the week if their manager approves it? - HR Policy Handbook Version: 1.1 Doc"
+  },
+  {
+    "question": "What is the remote work limit per week for employees with approval?",
+    "expected_sources": [
+      "hr_policy.txt"
+    ],
+    "should_abstain": false,
+    "diagnostics_abstained": false,
+    "answer_support": true,
+    "abstention_alignment": true,
+    "grounding_score": 0.8593,
+    "unsupported_sentence_ratio": 0.1111,
+    "sentence_count": 9,
+    "hallucination_flag": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: What is the remote work limit per week for employees with approval? - HR Policy Handbook Version: 1.1 Document Type: Inter"
+  },
+  {
+    "question": "What security training must employees complete each year?",
+    "expected_sources": [
+      "hr_policy.txt"
+    ],
+    "should_abstain": false,
+    "diagnostics_abstained": false,
+    "answer_support": true,
+    "abstention_alignment": true,
+    "grounding_score": 0.7976,
+    "unsupported_sentence_ratio": 0.1429,
+    "sentence_count": 7,
+    "hallucination_flag": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: What security training must employees complete each year? - Security Clarifications All employees are required to complete"
+  },
+  {
+    "question": "Are employees required to complete annual security awareness training?",
+    "expected_sources": [
+      "hr_policy.txt"
+    ],
+    "should_abstain": false,
+    "diagnostics_abstained": false,
+    "answer_support": true,
+    "abstention_alignment": true,
+    "grounding_score": 0.8242,
+    "unsupported_sentence_ratio": 0.1429,
+    "sentence_count": 7,
+    "hallucination_flag": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: Are employees required to complete annual security awareness training? - Security Clarifications All employees are require"
+  },
+  {
+    "question": "What authentication control is required for all company systems?",
+    "expected_sources": [
+      "hr_policy.txt"
+    ],
+    "should_abstain": false,
+    "diagnostics_abstained": false,
+    "answer_support": true,
+    "abstention_alignment": true,
+    "grounding_score": 0.7976,
+    "unsupported_sentence_ratio": 0.1429,
+    "sentence_count": 7,
+    "hallucination_flag": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: What authentication control is required for all company systems? - Security Clarifications All employees are required to c"
+  },
+  {
+    "question": "Do employees need multi-factor authentication for company systems?",
+    "expected_sources": [
+      "hr_policy.txt"
+    ],
+    "should_abstain": false,
+    "diagnostics_abstained": false,
+    "answer_support": true,
+    "abstention_alignment": true,
+    "grounding_score": 0.7976,
+    "unsupported_sentence_ratio": 0.1429,
+    "sentence_count": 7,
+    "hallucination_flag": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: Do employees need multi-factor authentication for company systems? - Security Clarifications All employees are required to"
+  },
+  {
+    "question": "How many business days are invoices due within?",
+    "expected_sources": [
+      "vendor_agreement.txt"
+    ],
+    "should_abstain": false,
+    "diagnostics_abstained": false,
+    "answer_support": true,
+    "abstention_alignment": true,
+    "grounding_score": 0.8426,
+    "unsupported_sentence_ratio": 0.1111,
+    "sentence_count": 9,
+    "hallucination_flag": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: How many business days are invoices due within? - Payment Terms Invoices are due within 15 business days of receipt unless"
+  },
+  {
+    "question": "What are the payment terms for invoices under the vendor agreement?",
+    "expected_sources": [
+      "vendor_agreement.txt"
+    ],
+    "should_abstain": false,
+    "diagnostics_abstained": false,
+    "answer_support": true,
+    "abstention_alignment": true,
+    "grounding_score": 0.8376,
+    "unsupported_sentence_ratio": 0.1111,
+    "sentence_count": 9,
+    "hallucination_flag": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: What are the payment terms for invoices under the vendor agreement? - Payment Terms Invoices are due within 15 business da"
+  },
+  {
+    "question": "How quickly must invoices be paid after receipt?",
+    "expected_sources": [
+      "vendor_agreement.txt"
+    ],
+    "should_abstain": false,
+    "diagnostics_abstained": false,
+    "answer_support": true,
+    "abstention_alignment": true,
+    "grounding_score": 0.8426,
+    "unsupported_sentence_ratio": 0.1111,
+    "sentence_count": 9,
+    "hallucination_flag": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: How quickly must invoices be paid after receipt? - Payment Terms Invoices are due within 15 business days of receipt unles"
+  },
+  {
+    "question": "Within how many business days of receipt are invoices payable?",
+    "expected_sources": [
+      "vendor_agreement.txt"
+    ],
+    "should_abstain": false,
+    "diagnostics_abstained": false,
+    "answer_support": true,
+    "abstention_alignment": true,
+    "grounding_score": 0.8413,
+    "unsupported_sentence_ratio": 0.1111,
+    "sentence_count": 9,
+    "hallucination_flag": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: Within how many business days of receipt are invoices payable? - Payment Terms Invoices are due within 15 business days of"
+  },
+  {
+    "question": "How long must shared proprietary information remain confidential after termination?",
+    "expected_sources": [
+      "vendor_agreement.txt"
+    ],
+    "should_abstain": false,
+    "diagnostics_abstained": false,
+    "answer_support": true,
+    "abstention_alignment": true,
+    "grounding_score": 0.8061,
+    "unsupported_sentence_ratio": 0.1429,
+    "sentence_count": 7,
+    "hallucination_flag": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: How long must shared proprietary information remain confidential after termination? - Confidentiality Clarifications Confi"
+  },
+  {
+    "question": "What is the confidentiality period after the agreement ends?",
+    "expected_sources": [
+      "vendor_agreement.txt"
+    ],
+    "should_abstain": false,
+    "diagnostics_abstained": false,
+    "answer_support": true,
+    "abstention_alignment": true,
+    "grounding_score": 0.8095,
+    "unsupported_sentence_ratio": 0.1429,
+    "sentence_count": 7,
+    "hallucination_flag": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: What is the confidentiality period after the agreement ends? - Confidentiality Clarifications Confidentiality obligations "
+  },
+  {
+    "question": "For how many years does confidentiality survive termination?",
+    "expected_sources": [
+      "vendor_agreement.txt"
+    ],
+    "should_abstain": false,
+    "diagnostics_abstained": false,
+    "answer_support": true,
+    "abstention_alignment": true,
+    "grounding_score": 0.7792,
+    "unsupported_sentence_ratio": 0.2857,
+    "sentence_count": 7,
+    "hallucination_flag": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: For how many years does confidentiality survive termination? - Confidentiality Clarifications Confidentiality obligations "
+  },
+  {
+    "question": "How long do the confidentiality obligations continue after termination?",
+    "expected_sources": [
+      "vendor_agreement.txt"
+    ],
+    "should_abstain": false,
+    "diagnostics_abstained": false,
+    "answer_support": true,
+    "abstention_alignment": true,
+    "grounding_score": 0.7802,
+    "unsupported_sentence_ratio": 0.2857,
+    "sentence_count": 7,
+    "hallucination_flag": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: How long do the confidentiality obligations continue after termination? - Confidentiality Clarifications Confidentiality o"
+  },
+  {
+    "question": "How much notice is required to terminate the vendor agreement?",
+    "expected_sources": [
+      "vendor_agreement.txt"
+    ],
+    "should_abstain": false,
+    "diagnostics_abstained": false,
+    "answer_support": true,
+    "abstention_alignment": true,
+    "grounding_score": 0.85,
+    "unsupported_sentence_ratio": 0.1,
+    "sentence_count": 10,
+    "hallucination_flag": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: How much notice is required to terminate the vendor agreement? - Vendor Agreement Version: 1.0 Document Type: Contract Sum"
+  },
+  {
+    "question": "Can either party terminate the agreement with written notice, and how much?",
+    "expected_sources": [
+      "vendor_agreement.txt"
+    ],
+    "should_abstain": false,
+    "diagnostics_abstained": false,
+    "answer_support": true,
+    "abstention_alignment": true,
+    "grounding_score": 0.8688,
+    "unsupported_sentence_ratio": 0.1,
+    "sentence_count": 10,
+    "hallucination_flag": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: Can either party terminate the agreement with written notice, and how much? - Vendor Agreement Version: 1.0 Document Type:"
+  },
+  {
+    "question": "What is the standard termination notice period in the vendor agreement?",
+    "expected_sources": [
+      "vendor_agreement.txt"
+    ],
+    "should_abstain": false,
+    "diagnostics_abstained": false,
+    "answer_support": true,
+    "abstention_alignment": true,
+    "grounding_score": 0.8714,
+    "unsupported_sentence_ratio": 0.1,
+    "sentence_count": 10,
+    "hallucination_flag": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: What is the standard termination notice period in the vendor agreement? - Vendor Agreement Version: 1.0 Document Type: Con"
+  },
+  {
+    "question": "How many days written notice are needed for termination by either party?",
+    "expected_sources": [
+      "vendor_agreement.txt"
+    ],
+    "should_abstain": false,
+    "diagnostics_abstained": false,
+    "answer_support": true,
+    "abstention_alignment": true,
+    "grounding_score": 0.8533,
+    "unsupported_sentence_ratio": 0.1,
+    "sentence_count": 10,
+    "hallucination_flag": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: How many days written notice are needed for termination by either party? - Vendor Agreement Version: 1.0 Document Type: Co"
+  },
+  {
+    "question": "When is immediate termination allowed under the vendor agreement?",
+    "expected_sources": [
+      "vendor_agreement.txt"
+    ],
+    "should_abstain": false,
+    "diagnostics_abstained": false,
+    "answer_support": true,
+    "abstention_alignment": true,
+    "grounding_score": 0.8615,
+    "unsupported_sentence_ratio": 0.1,
+    "sentence_count": 10,
+    "hallucination_flag": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: When is immediate termination allowed under the vendor agreement? - Vendor Agreement Version: 1.0 Document Type: Contract "
+  },
+  {
+    "question": "Under what circumstances can the agreement be terminated immediately?",
+    "expected_sources": [
+      "vendor_agreement.txt"
+    ],
+    "should_abstain": false,
+    "diagnostics_abstained": false,
+    "answer_support": true,
+    "abstention_alignment": true,
+    "grounding_score": 0.8385,
+    "unsupported_sentence_ratio": 0.2,
+    "sentence_count": 10,
+    "hallucination_flag": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: Under what circumstances can the agreement be terminated immediately? - Vendor Agreement Version: 1.0 Document Type: Contr"
+  },
+  {
+    "question": "Is immediate termination permitted for fraud or material breach?",
+    "expected_sources": [
+      "vendor_agreement.txt"
+    ],
+    "should_abstain": false,
+    "diagnostics_abstained": false,
+    "answer_support": true,
+    "abstention_alignment": true,
+    "grounding_score": 0.875,
+    "unsupported_sentence_ratio": 0.1,
+    "sentence_count": 10,
+    "hallucination_flag": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: Is immediate termination permitted for fraud or material breach? - Vendor Agreement Version: 1.0 Document Type: Contract S"
+  },
+  {
+    "question": "What events allow immediate termination without waiting for the notice period?",
+    "expected_sources": [
+      "vendor_agreement.txt"
+    ],
+    "should_abstain": false,
+    "diagnostics_abstained": false,
+    "answer_support": true,
+    "abstention_alignment": true,
+    "grounding_score": 0.8571,
+    "unsupported_sentence_ratio": 0.1,
+    "sentence_count": 10,
+    "hallucination_flag": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: What events allow immediate termination without waiting for the notice period? - Vendor Agreement Version: 1.0 Document Ty"
+  },
+  {
+    "question": "What is the PTO carryover policy?",
+    "expected_sources": [
+      "hr_policy.txt"
+    ],
+    "should_abstain": false,
+    "diagnostics_abstained": false,
+    "answer_support": false,
+    "abstention_alignment": true,
+    "grounding_score": 0.8444,
+    "unsupported_sentence_ratio": 0.1111,
+    "sentence_count": 9,
+    "hallucination_flag": true,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: What is the PTO carryover policy? - PTO Carryover Clarifications The standard policy is that unused PTO expires at the end"
+  },
+  {
+    "question": "Can unused PTO roll over into the next year?",
+    "expected_sources": [
+      "hr_policy.txt"
+    ],
+    "should_abstain": false,
+    "diagnostics_abstained": false,
+    "answer_support": false,
+    "abstention_alignment": true,
+    "grounding_score": 0.8462,
+    "unsupported_sentence_ratio": 0.1111,
+    "sentence_count": 9,
+    "hallucination_flag": true,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: Can unused PTO roll over into the next year? - PTO Carryover Clarifications The standard policy is that unused PTO expires"
+  },
+  {
+    "question": "Do employees lose unused PTO at year end?",
+    "expected_sources": [
+      "hr_policy.txt"
+    ],
+    "should_abstain": false,
+    "diagnostics_abstained": false,
+    "answer_support": false,
+    "abstention_alignment": true,
+    "grounding_score": 0.8426,
+    "unsupported_sentence_ratio": 0.1111,
+    "sentence_count": 9,
+    "hallucination_flag": true,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: Do employees lose unused PTO at year end? - PTO Carryover Clarifications The standard policy is that unused PTO expires at"
+  },
+  {
+    "question": "Is PTO rollover allowed automatically?",
+    "expected_sources": [
+      "hr_policy.txt"
+    ],
+    "should_abstain": false,
+    "diagnostics_abstained": false,
+    "answer_support": true,
+    "abstention_alignment": true,
+    "grounding_score": 0.8519,
+    "unsupported_sentence_ratio": 0.1111,
+    "sentence_count": 9,
+    "hallucination_flag": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: Is PTO rollover allowed automatically? - PTO Carryover Clarifications The standard policy is that unused PTO expires at th"
+  },
+  {
+    "question": "When is PTO carryover allowed?",
+    "expected_sources": [
+      "hr_policy.txt"
+    ],
+    "should_abstain": false,
+    "diagnostics_abstained": false,
+    "answer_support": true,
+    "abstention_alignment": true,
+    "grounding_score": 0.8395,
+    "unsupported_sentence_ratio": 0.1111,
+    "sentence_count": 9,
+    "hallucination_flag": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: When is PTO carryover allowed? - PTO Carryover Clarifications The standard policy is that unused PTO expires at the end of"
+  },
+  {
+    "question": "What is the parental leave policy?",
+    "expected_sources": [],
+    "should_abstain": true,
+    "diagnostics_abstained": false,
+    "answer_support": true,
+    "abstention_alignment": false,
+    "grounding_score": 0.8333,
+    "unsupported_sentence_ratio": 0.1111,
+    "sentence_count": 9,
+    "hallucination_flag": true,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: What is the parental leave policy? - Paid Time Off Policy Full-time employees receive 20 days of paid time off per calenda"
+  },
+  {
+    "question": "Does the company reimburse internet expenses for remote employees?",
+    "expected_sources": [],
+    "should_abstain": true,
+    "diagnostics_abstained": false,
+    "answer_support": true,
+    "abstention_alignment": false,
+    "grounding_score": 0.8241,
+    "unsupported_sentence_ratio": 0.2222,
+    "sentence_count": 9,
+    "hallucination_flag": true,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: Does the company reimburse internet expenses for remote employees? - HR Policy Handbook Version: 1.1 Document Type: Intern"
+  },
+  {
+    "question": "What is the severance policy for terminated employees?",
+    "expected_sources": [],
+    "should_abstain": true,
+    "diagnostics_abstained": true,
+    "answer_support": true,
+    "abstention_alignment": true,
+    "grounding_score": 0.1667,
+    "unsupported_sentence_ratio": 1.0,
+    "sentence_count": 2,
+    "hallucination_flag": false,
+    "answer_preview": "I do not have enough reliable information in the indexed documents to answer that confidently. Reason: low_margin."
+  },
+  {
+    "question": "What jurisdiction governs the vendor agreement?",
+    "expected_sources": [],
+    "should_abstain": true,
+    "diagnostics_abstained": false,
+    "answer_support": true,
+    "abstention_alignment": false,
+    "grounding_score": 0.84,
+    "unsupported_sentence_ratio": 0.2,
+    "sentence_count": 10,
+    "hallucination_flag": true,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: What jurisdiction governs the vendor agreement? - Vendor Agreement Version: 1.0 Document Type: Contract Summary  Overview "
+  },
+  {
+    "question": "Are vendors required to carry cyber insurance?",
+    "expected_sources": [],
+    "should_abstain": true,
+    "diagnostics_abstained": false,
+    "answer_support": true,
+    "abstention_alignment": false,
+    "grounding_score": 0.7662,
+    "unsupported_sentence_ratio": 0.2857,
+    "sentence_count": 7,
+    "hallucination_flag": true,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: Are vendors required to carry cyber insurance? - Security Clarifications All employees are required to complete security a"
+  }
+]

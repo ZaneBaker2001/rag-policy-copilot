@@ -1,0 +1,344 @@
+[
+  {
+    "question": "How many paid time off days do full-time employees receive?",
+    "retrieval_latency_ms": 242.13,
+    "generation_latency_ms": 327.17,
+    "total_latency_ms": 569.32,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: How many paid time off days do full-time employees receive? - Paid Time Off Policy"
+  },
+  {
+    "question": "How much PTO do full-time employees get each calendar year?",
+    "retrieval_latency_ms": 104.38,
+    "generation_latency_ms": 164.58,
+    "total_latency_ms": 268.98,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: How much PTO do full-time employees get each calendar year? - Paid Time Off Policy"
+  },
+  {
+    "question": "What is the annual paid time off allocation for full-time employees?",
+    "retrieval_latency_ms": 29.15,
+    "generation_latency_ms": 180.71,
+    "total_latency_ms": 209.87,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: What is the annual paid time off allocation for full-time employees? - Paid Time O"
+  },
+  {
+    "question": "How many vacation days are granted to full-time employees per year?",
+    "retrieval_latency_ms": 28.16,
+    "generation_latency_ms": 135.75,
+    "total_latency_ms": 163.92,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: How many vacation days are granted to full-time employees per year? - Paid Time Of"
+  },
+  {
+    "question": "How many days per week may employees work remotely with manager approval?",
+    "retrieval_latency_ms": 29.99,
+    "generation_latency_ms": 135.44,
+    "total_latency_ms": 165.44,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: How many days per week may employees work remotely with manager approval? - HR Pol"
+  },
+  {
+    "question": "What is the maximum number of remote workdays allowed each week with manager approval?",
+    "retrieval_latency_ms": 109.56,
+    "generation_latency_ms": 143.98,
+    "total_latency_ms": 253.54,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: What is the maximum number of remote workdays allowed each week with manager appro"
+  },
+  {
+    "question": "How often can employees work from home during the week if their manager approves it?",
+    "retrieval_latency_ms": 31.18,
+    "generation_latency_ms": 181.11,
+    "total_latency_ms": 212.3,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: How often can employees work from home during the week if their manager approves i"
+  },
+  {
+    "question": "What is the remote work limit per week for employees with approval?",
+    "retrieval_latency_ms": 35.41,
+    "generation_latency_ms": 204.4,
+    "total_latency_ms": 239.83,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: What is the remote work limit per week for employees with approval? - HR Policy Ha"
+  },
+  {
+    "question": "What security training must employees complete each year?",
+    "retrieval_latency_ms": 103.96,
+    "generation_latency_ms": 172.82,
+    "total_latency_ms": 276.8,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: What security training must employees complete each year? - Security Clarification"
+  },
+  {
+    "question": "Are employees required to complete annual security awareness training?",
+    "retrieval_latency_ms": 101.81,
+    "generation_latency_ms": 165.14,
+    "total_latency_ms": 266.97,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: Are employees required to complete annual security awareness training? - Security "
+  },
+  {
+    "question": "What authentication control is required for all company systems?",
+    "retrieval_latency_ms": 27.92,
+    "generation_latency_ms": 176.7,
+    "total_latency_ms": 204.63,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: What authentication control is required for all company systems? - Security Clarif"
+  },
+  {
+    "question": "Do employees need multi-factor authentication for company systems?",
+    "retrieval_latency_ms": 103.85,
+    "generation_latency_ms": 200.58,
+    "total_latency_ms": 304.44,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: Do employees need multi-factor authentication for company systems? - Security Clar"
+  },
+  {
+    "question": "How many business days are invoices due within?",
+    "retrieval_latency_ms": 27.49,
+    "generation_latency_ms": 157.45,
+    "total_latency_ms": 184.96,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: How many business days are invoices due within? - Payment Terms Invoices are due w"
+  },
+  {
+    "question": "What are the payment terms for invoices under the vendor agreement?",
+    "retrieval_latency_ms": 33.85,
+    "generation_latency_ms": 160.96,
+    "total_latency_ms": 194.82,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: What are the payment terms for invoices under the vendor agreement? - Payment Term"
+  },
+  {
+    "question": "How quickly must invoices be paid after receipt?",
+    "retrieval_latency_ms": 29.78,
+    "generation_latency_ms": 159.2,
+    "total_latency_ms": 188.99,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: How quickly must invoices be paid after receipt? - Payment Terms Invoices are due "
+  },
+  {
+    "question": "Within how many business days of receipt are invoices payable?",
+    "retrieval_latency_ms": 31.64,
+    "generation_latency_ms": 167.46,
+    "total_latency_ms": 199.11,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: Within how many business days of receipt are invoices payable? - Payment Terms Inv"
+  },
+  {
+    "question": "How long must shared proprietary information remain confidential after termination?",
+    "retrieval_latency_ms": 26.47,
+    "generation_latency_ms": 156.65,
+    "total_latency_ms": 183.13,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: How long must shared proprietary information remain confidential after termination"
+  },
+  {
+    "question": "What is the confidentiality period after the agreement ends?",
+    "retrieval_latency_ms": 33.13,
+    "generation_latency_ms": 157.48,
+    "total_latency_ms": 190.63,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: What is the confidentiality period after the agreement ends? - Confidentiality Cla"
+  },
+  {
+    "question": "For how many years does confidentiality survive termination?",
+    "retrieval_latency_ms": 27.37,
+    "generation_latency_ms": 132.57,
+    "total_latency_ms": 159.95,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: For how many years does confidentiality survive termination? - Confidentiality Cla"
+  },
+  {
+    "question": "How long do the confidentiality obligations continue after termination?",
+    "retrieval_latency_ms": 33.64,
+    "generation_latency_ms": 187.37,
+    "total_latency_ms": 221.02,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: How long do the confidentiality obligations continue after termination? - Confiden"
+  },
+  {
+    "question": "How much notice is required to terminate the vendor agreement?",
+    "retrieval_latency_ms": 28.95,
+    "generation_latency_ms": 191.76,
+    "total_latency_ms": 220.72,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: How much notice is required to terminate the vendor agreement? - Vendor Agreement "
+  },
+  {
+    "question": "Can either party terminate the agreement with written notice, and how much?",
+    "retrieval_latency_ms": 32.1,
+    "generation_latency_ms": 126.11,
+    "total_latency_ms": 158.22,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: Can either party terminate the agreement with written notice, and how much? - Vend"
+  },
+  {
+    "question": "What is the standard termination notice period in the vendor agreement?",
+    "retrieval_latency_ms": 108.73,
+    "generation_latency_ms": 196.43,
+    "total_latency_ms": 305.17,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: What is the standard termination notice period in the vendor agreement? - Vendor A"
+  },
+  {
+    "question": "How many days written notice are needed for termination by either party?",
+    "retrieval_latency_ms": 29.44,
+    "generation_latency_ms": 238.56,
+    "total_latency_ms": 268.01,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: How many days written notice are needed for termination by either party? - Vendor "
+  },
+  {
+    "question": "When is immediate termination allowed under the vendor agreement?",
+    "retrieval_latency_ms": 34.74,
+    "generation_latency_ms": 148.1,
+    "total_latency_ms": 182.85,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: When is immediate termination allowed under the vendor agreement? - Vendor Agreeme"
+  },
+  {
+    "question": "Under what circumstances can the agreement be terminated immediately?",
+    "retrieval_latency_ms": 27.62,
+    "generation_latency_ms": 141.42,
+    "total_latency_ms": 169.06,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: Under what circumstances can the agreement be terminated immediately? - Vendor Agr"
+  },
+  {
+    "question": "Is immediate termination permitted for fraud or material breach?",
+    "retrieval_latency_ms": 26.37,
+    "generation_latency_ms": 139.4,
+    "total_latency_ms": 165.78,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: Is immediate termination permitted for fraud or material breach? - Vendor Agreemen"
+  },
+  {
+    "question": "What events allow immediate termination without waiting for the notice period?",
+    "retrieval_latency_ms": 26.71,
+    "generation_latency_ms": 175.61,
+    "total_latency_ms": 202.33,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: What events allow immediate termination without waiting for the notice period? - V"
+  },
+  {
+    "question": "What is the PTO carryover policy?",
+    "retrieval_latency_ms": 38.12,
+    "generation_latency_ms": 177.2,
+    "total_latency_ms": 215.34,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: What is the PTO carryover policy? - PTO Carryover Clarifications The standard poli"
+  },
+  {
+    "question": "Can unused PTO roll over into the next year?",
+    "retrieval_latency_ms": 32.7,
+    "generation_latency_ms": 173.24,
+    "total_latency_ms": 205.95,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: Can unused PTO roll over into the next year? - PTO Carryover Clarifications The st"
+  },
+  {
+    "question": "Do employees lose unused PTO at year end?",
+    "retrieval_latency_ms": 27.45,
+    "generation_latency_ms": 192.9,
+    "total_latency_ms": 220.36,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: Do employees lose unused PTO at year end? - PTO Carryover Clarifications The stand"
+  },
+  {
+    "question": "Is PTO rollover allowed automatically?",
+    "retrieval_latency_ms": 104.88,
+    "generation_latency_ms": 159.81,
+    "total_latency_ms": 264.7,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: Is PTO rollover allowed automatically? - PTO Carryover Clarifications The standard"
+  },
+  {
+    "question": "When is PTO carryover allowed?",
+    "retrieval_latency_ms": 26.0,
+    "generation_latency_ms": 176.31,
+    "total_latency_ms": 202.33,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: When is PTO carryover allowed? - PTO Carryover Clarifications The standard policy "
+  },
+  {
+    "question": "What is the parental leave policy?",
+    "retrieval_latency_ms": 105.86,
+    "generation_latency_ms": 171.1,
+    "total_latency_ms": 276.98,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: What is the parental leave policy? - Paid Time Off Policy Full-time employees rece"
+  },
+  {
+    "question": "Does the company reimburse internet expenses for remote employees?",
+    "retrieval_latency_ms": 30.18,
+    "generation_latency_ms": 177.77,
+    "total_latency_ms": 207.96,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: Does the company reimburse internet expenses for remote employees? - HR Policy Han"
+  },
+  {
+    "question": "What is the severance policy for terminated employees?",
+    "retrieval_latency_ms": 30.3,
+    "generation_latency_ms": 0.0,
+    "total_latency_ms": 30.31,
+    "confident": false,
+    "abstained": true,
+    "answer_preview": "I do not have enough reliable information in the indexed documents to answer that confidently. Reason: low_margin."
+  },
+  {
+    "question": "What jurisdiction governs the vendor agreement?",
+    "retrieval_latency_ms": 38.98,
+    "generation_latency_ms": 141.55,
+    "total_latency_ms": 180.54,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: What jurisdiction governs the vendor agreement? - Vendor Agreement Version: 1.0 Do"
+  },
+  {
+    "question": "Are vendors required to carry cyber insurance?",
+    "retrieval_latency_ms": 27.44,
+    "generation_latency_ms": 132.63,
+    "total_latency_ms": 160.09,
+    "confident": true,
+    "abstained": false,
+    "answer_preview": "Using extractive fallback because answer generation was unavailable.  Best matching evidence for: Are vendors required to carry cyber insurance? - Security Clarifications All emplo"
+  }
+]

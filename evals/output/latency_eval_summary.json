@@ -1,0 +1,30 @@
+{
+  "cases": 38,
+  "openai_model": "gpt-4o-mini",
+  "using_openai_generation": true,
+  "retrieval_latency": {
+    "mean_ms": 51.77,
+    "median_ms": 31.41,
+    "p95_ms": 116.18,
+    "max_ms": 242.13
+  },
+  "generation_latency": {
+    "mean_ms": 166.51,
+    "median_ms": 166.3,
+    "p95_ms": 242.99,
+    "max_ms": 327.17
+  },
+  "total_latency": {
+    "mean_ms": 218.3,
+    "median_ms": 205.29,
+    "p95_ms": 318.38,
+    "max_ms": 569.32
+  },
+  "artifacts": {
+    "rows_json": "evals/output/latency_eval_rows.json",
+    "summary_json": "evals/output/latency_eval_summary.json",
+    "latency_by_case_png": "evals/output/latency_by_case.png",
+    "latency_distribution_png": "evals/output/latency_distribution.png",
+    "latency_scatter_png": "evals/output/latency_scatter.png"
+  }
+}
