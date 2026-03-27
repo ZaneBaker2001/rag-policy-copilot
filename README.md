@@ -187,6 +187,7 @@ The below plot visualizes the model's latency.
 
 ![Model Latency](./evals/output/latency_by_case.png) 
 
+Takeaways: 
 - Latency is mostly stable, with total response time for most cases landing around 160–220 ms.
 - The biggest contributor is usually generation latency, while retrieval latency is smaller but occasionally spikes.
 - Performance is generally consistent and fast outside of a few outlier cases. 
