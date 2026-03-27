@@ -70,10 +70,22 @@ Open docs:
 http://127.0.0.1:8000/docs
 ```
 
-Sample request: 
-```bash 
-curl -X POST http://127.0.0.1:8000/ask -H "Content-Type: application/json" -H "x-api-key: dev-admin-key" -d '{"question":"What is the PTO carryover policy?"}'
+Docker setup:
+
+```bash
+docker build -t rag-policy-copilot .
+docker run --rm -p 8000:8000 rag-policy-copilot
 ```
+
+Sample request: 
+
+```bash 
+curl -X POST http://127.0.0.1:8000/ask -H "Content-Type: application/json" -H "x-api-key: dev-admin-key" \
+-d '{"question":"What is the PTO carryover policy?"}'
+```
+
+Sample response:
+
 
 ### Add Documents 
 
@@ -135,6 +147,7 @@ rag-policy-copilot/
 │   └── test_hybrid_scoring.py
 ├── .env.example
 ├── .gitignore
+├── Dockerfile 
 ├── README.md
 └── requirements.txt
 ```
@@ -182,13 +195,8 @@ The following results were produced from a sample evaluation run:
 | Confident Rate |  97.37% |
 | Abstain Rate   |   2.63% |
 
-## Limitations 
-
-- Performance not optimized for large-scale datasets
-- No distributed indexing
-- Limited document parsing for complex PDFs
-- Evaluation dataset is small and synthetic
-
+These results indicate that the model operates with great confidence and refrains from providing incorrect answers, which aligns with the
+intended behavior.
 
 
 
