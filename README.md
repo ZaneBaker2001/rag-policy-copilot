@@ -84,9 +84,6 @@ curl -X POST http://127.0.0.1:8000/ask -H "Content-Type: application/json" \
 -H "x-api-key: dev-admin-key" -d '{"question":"What is the PTO carryover policy?"}'
 ```
 
-Sample response:
-
-
 ### Add Documents 
 
 Supported file types include:
