@@ -105,7 +105,7 @@ Sample response:
 }
 ```
 
-### Add Documents 
+## Add Documents 
 
 Supported file types include:
 
@@ -117,7 +117,7 @@ Supported file types include:
 
 Two sample .txt files are provided. 
 
-### Environment 
+## Environment 
 
 A sample environment file is provided for demo usage:
 
