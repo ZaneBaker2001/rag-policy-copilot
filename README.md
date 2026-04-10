@@ -84,6 +84,25 @@ curl -X POST http://127.0.0.1:8000/ask -H "Content-Type: application/json" \
 -H "x-api-key: dev-admin-key" -d '{"question":"What is the PTO carryover policy?"}'
 ```
 
+Sample response:
+```json
+{
+  "answer": "The default PTO carryover policy is no carryover. Unused PTO expires at the end of the calendar year unless HR approves a written exception.",
+  "citations": [
+    {
+      "source": "hr_policy.txt",
+      "chunk_id": "hr_policy.txt::chunk_2",
+      "page": null
+    },
+    {
+      "source": "hr_policy.txt",
+      "chunk_id": "hr_policy.txt::chunk_1",
+      "page": null
+    }
+  ]
+}
+```
+
 ### Add Documents 
 
 Supported file types include:
