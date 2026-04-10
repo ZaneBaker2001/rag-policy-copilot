@@ -70,12 +70,14 @@ Open docs:
 http://127.0.0.1:8000/docs
 ```
 
-Docker setup:
+## Docker setup
 
 ```bash
 docker build -t rag-policy-copilot .
 docker run --rm -p 8000:8000 rag-policy-copilot
 ```
+
+## Sample Request and Response 
 
 Sample request: 
 
