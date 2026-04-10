@@ -117,7 +117,7 @@ Two sample .txt files are provided.
 
 ### Environment 
 
-A sample environment file is provided:
+A sample environment file is provided for demo usage:
 
 ```bash
 OPENAI_API_KEY=your_api_key_here
