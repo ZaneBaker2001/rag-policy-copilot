@@ -41,12 +41,7 @@ Clone the repository:
 git clone https://github.com/ZaneBaker2001/rag-policy-copilot.git
 cd rag-policy-copilot
 ```
-Activate the virtual environment:
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
-Install the required packages: 
+Install the required dependencies: 
 ```bash
 pip3 install -r requirements.txt
 ```
